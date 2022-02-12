@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="customCard" pageWidth="595" pageHeight="700" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="11464ed6-de62-44e0-8bcb-27c303ce04f1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Singhe"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="id" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="tpNo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from product]]>
+	</queryString>
+	<field name="product_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="product_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="product_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="product"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="supplier_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="supplier_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="supplier_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="product"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="product_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="product_name"/>
+		<property name="com.jaspersoft.studio.field.label" value="product_name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="product"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="price" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="price"/>
+		<property name="com.jaspersoft.studio.field.label" value="price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="product"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="product"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="product"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sold_quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="sold_quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="sold_quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="product"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="219" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-15" y="-15" width="595" height="155" backcolor="#FFFFFF" uuid="afefb0de-506c-4b61-b066-045124d940ce">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+				</reportElement>
+				<staticText>
+					<reportElement x="50" y="0" width="468" height="43" forecolor="#0F0F0F" uuid="f90683f7-8ea1-49bd-abd2-f96c0ac80a84"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Singhe Hardware (Pvt Ltd)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="340" y="70" width="250" height="80" forecolor="#0D0C0C" uuid="1354de57-12b7-4b7b-a4bc-8387c985659b"/>
+					<textElement textAlignment="Left">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Address : 87/13/E,Wanagururoad,Hokaranda
+Telephone: 0773662571
+Email : singhe@live.com]]></text>
+				</staticText>
+				<line>
+					<reportElement x="2" y="159" width="591" height="1" uuid="40988fc9-1690-4820-b0d2-ee2a94cd37cc"/>
+				</line>
+				<staticText>
+					<reportElement x="140" y="170" width="378" height="50" uuid="6868e650-1e77-4696-8e18-0fc3ee421696"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial Black" size="26"/>
+					</textElement>
+					<text><![CDATA[Customer Card]]></text>
+				</staticText>
+				<image>
+					<reportElement x="0" y="-10" width="300" height="200" uuid="22752eee-6003-4309-8cb1-88011ee99c5a">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA["C:/Users/Moditha punchihewa/Documents/NetBeansProjects/Singhe/src/resources/logo.png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<detail>
+		<band height="340" splitType="Stretch">
+			<textField>
+				<reportElement x="400" y="0" width="165" height="30" uuid="f13a6e5b-f7ff-4bd8-a5d2-c8435b0a822b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="111" height="30" uuid="6fa19170-d1c7-4a16-832c-efff66ad05f3"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="70" width="365" height="30" uuid="12f899ec-4137-45de-937c-4897e3af2d1f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="125" width="365" height="55" uuid="8597977a-30b3-49bd-b5a2-3f040b56d866"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="200" width="364" height="30" uuid="255a4b0f-b5cc-4d98-a12e-3406e64aa77f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tpNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="0" width="100" height="30" uuid="1d4fc9ed-7bab-4158-a6a3-8f00052a53c1"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Customer Id :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="70" width="100" height="30" uuid="b030eb32-7ed9-4af9-a28d-67f3b0f1790b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="130" width="100" height="30" uuid="749f0bc1-d810-49f0-aea3-5873a8ff4179"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="200" width="100" height="30" uuid="247b7129-1522-4f22-8235-75e35b6954ef"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Phone NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="290" width="91" height="41" uuid="8497c0a6-418e-4ecf-898d-81a0ab3283bd"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Thank You !]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
